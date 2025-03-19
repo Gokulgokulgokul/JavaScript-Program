@@ -1,0 +1,51 @@
+1.href
+2.value
+3.type
+4.getAttribute(attribute_name)
+5.setAttribute(attribute_name,values)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="">linkedin</a>
+    <input type="text" name="" id="" value="hello">
+
+    <script>
+    const a=document.querySelector("a");
+    //href
+    console.log(a.href);
+    console.log(a.href="https://www.youtube.com/watch?v=H3XIJYEPdus&list=PLSDeUiTMfxW4zCLgOQgz4PWSN0QRmUUFR");
+ const input =document.querySelector("input");
+   //value
+ console.log(input.value);
+ console.log((input.value="gokul"))
+
+ //type
+ console.log(input.type);
+ console.log((input.type="email"));
+
+ //placeholder
+ console.log(input.placeholder);
+ console.log((input.placeholder="enter the mail id"))
+
+
+
+//SetAttribute
+console.log(input.setAttribute("placeholder","enter the password"));
+console.log(input.setAttribute("value","gokul123"));
+console.log(input.setAttribute("type","password"));
+
+//GetAttribute
+console.log(input.getAttribute("placeholder"));
+console.log(input.getAttribute("type"));
+console.log(input.getAttribute("value"));
+
+
+    </script>
+</body>
+</html>

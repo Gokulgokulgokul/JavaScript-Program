@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <section>
+        <h1>hello</h1>
+    </section><br><br><br><br>
+    <div>
+        <h1>hello2</h1>
+    </div>
+    
+    <script>
+        //create element...
+        var a=document.createElement("h1")
+        a.textContent="Hello";
+       a.classList.add("hell")
+       a.style.backgroundColor="red";
+       console.log(a);
+       document.body.append(a);
+
+
+       //{ 
+       // 
+       // appendchild
+
+       var newList=document.createElement("li");
+       newList.innerText="new one";
+       var ul=document.querySelector("ul");
+       ul.appendChild(newList);
+
+       //insetBefore 
+       var li=document.querySelector("li")
+       ul.insertBefore(newList,li);
+       //}
+
+
+
+       // append()
+       var section=document.querySelector("section");
+       var i=document.createElement("i");
+       var p=document.createElement("p");
+       i.textContent="i am I";
+       p.textContent="i am P";
+       i.style.backgroundColor="blue";
+       p.style.backgroundColor="blue";
+       section.append(i,p);
+
+    //    prepend()
+        var div=document.querySelector("div");
+        var i1=document.createElement("i");
+        var p1=document.createElement("p");
+        i1.textContent="i am I1";
+         p1.textContent="i am P1";
+         i1.style.backgroundColor="red";
+         p1.style.backgroundColor="red";
+       div.prepend(i1,p1);
+
+    </script>
+</body>
+</html>
