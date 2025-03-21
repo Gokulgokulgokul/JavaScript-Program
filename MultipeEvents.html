@@ -1,0 +1,104 @@
+1// click
+2//contextmenu
+3//dbclick
+4//mousedown
+5//mouseenter
+6//mouseleave
+7//mouseoul
+9//mouseover
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .blue
+  {
+color: blue;
+  }
+  .rgreen
+  {
+    color: rgb(0, 255, 200);
+  }
+  .red
+  {
+    color: rgb(255, 0, 0);
+  }
+  .yellow{
+    color: rgb(255, 247, 0);
+  }
+  .rgb
+  {
+    color: rgb(252, 190, 190);
+  }
+  .pink{
+    color: rgb(255, 0, 179);
+  }
+  .coral
+  { color:coral;
+
+  }
+  .rgreen
+  {
+    color:green
+  }
+  .grey
+  { color: rgb(166, 166, 166);
+
+  }
+    </style>
+</head>
+<body>
+    <p id="one">1 gokul</p>
+    <p id="two">2 amal</p>
+    <p id="three">3 divith</p>
+    <p id="four">4 gowtham</p>
+    <p id="five">5 jaishima</p>
+    <p id="six">6 abu</p>
+    <p id="seven">7 akhilesh</p>
+    <p id="eight">8 kalai</p>
+    <p id="nine">9 gurunathan</p>
+    <script>
+        var one=document.getElementById("one");
+        var two=document.getElementById("two");
+        var three=document.getElementById("three");
+        var four=document.getElementById("four");
+        var five=document.getElementById("five");
+        var six=document.getElementById("six");
+        var seven=document.getElementById("seven");
+        var eight=document.getElementById("eight");
+        var nine=document.getElementById("nine");
+        one.addEventListener("click",()=>{
+            one.classList.toggle("blue");
+        })
+        two.addEventListener("contextmenu",()=>{
+            two.classList.toggle("rgreen");
+        })
+        three.addEventListener("dblclick",()=>{
+            three.classList.toggle("red");
+        })
+        four.addEventListener("mousedown",()=>{
+            four.classList.toggle("yellow");
+        })
+        five.addEventListener("mouseenter",()=>{
+            five.classList.toggle("rgb");
+        })
+        six.addEventListener("mouseleave",()=>{
+            six.classList.toggle("pink");
+        })
+        seven.addEventListener("mousemove",()=>{
+            seven.classList.toggle("coral");
+        })
+        eight.addEventListener("mouseout",()=>{
+            eight.classList.toggle("rgreen");
+        })
+        nine.addEventListener("mouseover",()=>{
+            nine.classList.toggle("grey");
+        })
+    </script>
+</body>
+</html>

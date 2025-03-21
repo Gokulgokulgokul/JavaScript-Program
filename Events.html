@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in line event-->
+    <button onclick="alert('hi')" >clickme</button>
+
+   <!--  event handling-->
+   <button type="button">change</button>
+
+    <!--  addEventListener-->
+    <button id="btn" type="button">addEventlistener</button>
+
+     
+    <!-- Event object-->
+     <button id="btn1">event</button>
+
+   <script>
+    //event handling
+    var ch=document.querySelector("button");
+    ch.onclick=function()
+    {
+       
+        console.log(ch.type);
+    }
+    //addeventListener
+    var addev=document.getElementById("btn");
+    addev.addEventListener("click",()=>{
+        console.log(addev.type);    
+    })
+
+
+    //event Object
+    var obj=document.getElementById("btn1");
+    obj.addEventListener("click",(event)=>
+{
+    event.preventDefault();
+    console.log(event.target)
+    console.log(event.type)
+})
+
+
+   </script>
+</body>
+</html>

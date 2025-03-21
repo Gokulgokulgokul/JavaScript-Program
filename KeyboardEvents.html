@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <input type="text" id="ip1">
+    <input type="text" id="ip2">
+    <input type="text" id="ip3">
+    <script>
+        //keypress
+        var input=document.querySelector("input");
+        input.addEventListener("keypress",()=>{
+       console.log("key pressed")
+        })
+
+        //keyup
+        var input2=document.getElementById("ip1")
+        input2.addEventListener("keyup",()=>{
+       console.log( "key uped")
+        })
+        
+       //keydown
+       var input3=document.getElementById("ip2");
+       input3.addEventListener("keydown",()=>{
+       console.log( "key down")
+        })
+    
+///using methods and properties
+ var input4=document.getElementById("ip3");
+ input4.addEventListener("keypress",(event)=>{
+    console.log(input4.getAttribute("type "));
+    console.log(event.charCode);
+    console.log(event.code)
+    console.log(event.shiftKey);
+    console.log(event.ctrlKey);
+    console.log(event.key)
+ })
+    
+    </script>
+</body>
+</html>
